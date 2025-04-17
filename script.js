@@ -4,6 +4,7 @@ const galleryData = [
       img: "images/download.jpg",
       desc: "Elegant handmade wedding invitation with floral elements."
     },
+    
     {
       title: "Personalized Journals",
       img: "images/book.jpg",
