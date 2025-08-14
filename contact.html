@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Velisa — request a quote for custom stationery and gifts." />
+  <title>Contact | Velisa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="index.html">Velisa</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+      <ul id="navlinks" class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-head contact-head">
+      <h1 class="display-page">Request a Quote</h1>
+      <p class="lede">Tell us about your event and we'll get back to you with a tailored proposal.</p>
+    </header>
+
+    <section class="contact-card">
+      <form id="quoteForm" class="pretty-form" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required autocomplete="name" placeholder="Jane Doe" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="jane@email.com" />
+        </div>
+
+        <div class="field">
+          <label for="type">Project type</label>
+          <select id="type" name="type" required>
+            <option value="">Select an option</option>
+            <option>Wedding Invitation</option>
+            <option>Journal / Planner</option>
+            <option>Thank You Cards</option>
+            <option>Branding / Packaging</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="details">Details</label>
+          <textarea id="details" name="details" rows="5" placeholder="Theme, colors, quantity, date…"></textarea>
+        </div>
+
+        <label class="check">
+          <input id="updates" type="checkbox" />
+          <span>Send me updates and discounts</span>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Send request</button>
+        <p id="formMsg" class="confirmation" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- Columna: Info/CTA lateral -->
+      <aside class="contact-aside">
+        <div class="aside-card">
+          <h2 class="aside-title">Prefer WhatsApp or Email?</h2>
+          <ul class="contact-list" role="list">
+            <li><span class="dot"></span><strong>Email:</strong> hellovelisastudio@gmail.com</li>
+            <li><span class="dot"></span><strong>Hours:</strong> Mon–Sat, 9:00–18:00</li>
+            <li><span class="dot"></span><strong>Typical lead time:</strong> 5–10 business days</li>
+          </ul>
+          <p class="muted small">We respond within 24 hours.</p>
+        </div>
+
+        <div class="aside-card soft">
+          <h3 class="aside-sub">Helpful tips</h3>
+          <ul class="tips" role="list">
+            <li>Share your theme and colors.</li>
+            <li>Include quantity and deadline.</li>
+            <li>Add any inspiration images or links.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <small>© 2025 Velisa</small>
+    <nav aria-label="Secondary"><a href="references.html">References</a></nav>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

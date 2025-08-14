@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | Velisa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header tal como lo usas en las otras páginas -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Velisa</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container gallery-page">
+    <!-- Título -->
+    <section class="gallery-hero">
+      <h1 class="display-page">Gallery</h1>
+    </section>
+
+    <!-- Controles -->
+    <section class="filters" aria-label="Filters">
+      <div class="filter-row">
+        <label for="category" class="filter-label">Category:</label>
+        <select id="category" class="select">
+          <option value="all">All</option>
+          <option value="wedding">Wedding</option>
+          <option value="journal">Journals</option>
+          <option value="thankyou">Thank You</option>
+          <option value="brand">Branding</option>
+        </select>
+
+        <label class="check">
+          <input id="onlyFavs" type="checkbox" />
+          <span>Only favorites</span>
+        </label>
+
+        <span id="favCount" class="pill" aria-live="polite">0</span>
+      </div>
+    </section>
+
+    <!-- Grid (pon aquí tus imágenes; duplica más <figure>) -->
+    <section aria-label="Gallery">
+      <div id="grid" class="gallery" role="list">
+        <figure class="card" role="listitem" data-id="g1" data-category="wedding">
+          <button class="fav-badge" type="button" data-fav="g1" aria-pressed="false">♡</button>
+          <img src="images/download.jpg" alt="Floral invitation set" loading="lazy">
+        </figure>
+
+        <figure class="card" role="listitem" data-id="g2" data-category="journal">
+          <button class="fav-badge" type="button" data-fav="g2" aria-pressed="false">♡</button>
+          <img src="images/Leather wrap journal.jpeg" alt="Leather wrap journal" loading="lazy">
+        </figure>
+
+        <figure class="card" role="listitem" data-id="g3" data-category="thankyou">
+          <button class="fav-badge" type="button" data-fav="g3" aria-pressed="false">♡</button>
+          <img src="images/Minimal thank you card.jpeg" alt="Minimal thank you card" loading="lazy">
+        </figure>
+
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/Branding kit with labels and cards.jpeg" alt="Branding kit with labels and cards" loading="lazy">
+        </figure>
+
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/money holders.jpeg" alt="Money holders" loading="lazy">
+        </figure>
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/book separator.jpeg" alt="Book separator" loading="lazy">
+        </figure>
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/School material.jpeg" alt="School material" loading="lazy">
+        </figure>
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/Flowers holder.jpeg" alt="Flowers holder" loading="lazy">
+        </figure>
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/wedding favors.jpeg" alt="wedding favors" loading="lazy">
+        </figure>
+        <figure class="card" role="listitem" data-id="g4" data-category="brand">
+          <button class="fav-badge" type="button" data-fav="g4" aria-pressed="false">♡</button>
+          <img src="images/custom banners.jpeg" alt=" Custom banner" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Velisa | Crafted with 💖 in Mexico</small>
+    <a href="references.html">References</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
